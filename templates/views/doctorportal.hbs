@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="css/docprofile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  
+
+  <div class="container">
+    <div class="title">Doctor Registration</div>
+    <!-- profile photo -->
+    <div class="upload">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBZSuJ75bwz4WIxybUZPFn09NBt7wmLQFFF11o5OKry-Io-f2_0sW4ugSOtEtGpYeKLNw&usqp=CAU" width = 100 height = 100 alt="">
+      <div class="round">
+        <input type="file">
+        <i class = "fa fa-camera" style = "color: #fff;"></i>
+      </div>
+    </div>
+    <!-- end -->
+
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name<span style="color: red">*</span></span>
+            <input type="text" placeholder="Enter your name" value="{{naming}}" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Contact Number<span style="color: red">*</span></span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Educational Qualification<span style="color: red">*</span></span>
+            <input type="text" placeholder="Enter specialisation" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Specialisation<span style="color: red">*</span></span>
+            <!-- <input type="text" placeholder="Enter Educational Qualification" required> -->
+            <select name="membership" class="membership">
+              <option value="Neurologist">Neurologist</option>
+              <option value="Dentist">Dentist</option>
+              <option value="ENT" selected>ENT</option>
+              <option value="Oncologist">Oncologist</option>
+              <option value="Cardiologist" selected>Cardiologist</option>
+              <option value="Orthopedic" selected>Orthopedic</option>
+              <option value="Gynecologist" selected>Gynecologist</option>
+              <option value="Dermatologist" selected>Dermatologist</option>
+              <option value="Opthalmologists" selected>Opthalmologists</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Experience (in Years)<span style="color: red">*</span></span>
+            <input type="text" placeholder="in Years" required>
+          </div>
+
+          <!--<div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>-->
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3">
+            <span class="gender-title">Gender<span style="color: red">*</span></span>
+            <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+            </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        
+      </div>
+        <div class="input-box">
+            <span class="details">Address<span style="color: red">*</span></span>
+            <textarea cols="80" rows="5" class="textarea" placeholder=" Enter the Address" value="Address"></textarea> 
+            <!-- <input type="text" placeholder="Enter your Address" style="text-align:center ; height: 100px ; width: 90% ;" > -->
+      </div>
+      <br>
+
+      <div class="input-box">
+        <span class="details">Upload Your ID<span style="color: red">*</span></span>
+        <label>Your ID
+          <input type="file" name="myImage" accept="image/*" />
+        </label>   
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </div>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

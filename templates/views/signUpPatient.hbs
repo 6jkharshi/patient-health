@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEN HEALTH</title>
+    <link rel="stylesheet" href="css/signlog.css">
+</head>
+<body>
+    
+<h1 style="color:rgb(0, 0, 0);"> PATIENT SIGN-UP</h1>
+<div class="container right-panel-active">
+	<!-- Sign Up -->
+	<div class="container__form container--signup">
+		<form action="/patientportal" class="form" id="form1" method="POST">
+			<h2 class="form__title">Sign Up</h2>
+			<input type="text" placeholder="Full Name" class="input" name="user" />
+			<input type="email" placeholder="Email" class="input" name="email" />
+			<input type="password" placeholder="Password" class="input" name="password" />
+			{{!-- <button class="btn" type="submit"><a href="patientprofile.html">Sign Up</a></button> --}}
+            <input class="btn" type="submit" value="Sign UP" > 
+		</form>
+	</div>
+{{!-- </body>
+</html> --}}
+{{!-- 
+	<!-- Sign In -->
+	<div class="container__form container--signin">
+		<form action="/signlogdoctor" class="form" id="form2" method="POST">
+			<h2 class="form__title">Login</h2>
+			<input type="email" placeholder="Email" class="input" />
+			<input type="password" placeholder="Password" class="input" />
+			<a href="#" class="link">Forgot your password?</a>
+			<input class="btn" type="submit" value="Log In" > 
+		</form>
+	</div> --}}
+
+	<!-- Overlay -->
+	<div class="container__overlay">
+		<div class="overlay">
+			<div class="overlay__panel overlay--right">
+				  <input class="btn"  id="signUp" type="submit" value="Sign UP" > 
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
