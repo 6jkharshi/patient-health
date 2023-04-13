@@ -5,6 +5,7 @@ const hbs = require("hbs");
 const port = process.env.PORT || 3000;
 require("../config/connect")
 const SignUpCollPatient=require("../models/patient")
+const SignUpPatientDet=require("../models/patientdet")
 const SignUpColDoctor=require("../models/doctor")
 const static_path = path.join(__dirname, "../public");
 const templates_path = path.join(__dirname, "../templates/views");

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,56 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GEN HEALTH</title>
-    <link rel="stylesheet" href="css/signlog.css">
+    <link rel="stylesheet" href="css/patientLogIn.css">
 </head>
 <body>
     
-<h1 style="color:rgb(0, 0, 0);"> PATIENT LOGIN</h1>
+<h1 style="color:rgb(251, 247, 247);"> PATIENT LOGIN</h1>
 <div class="container right-panel-active">
-
-
-	<!-- Sign In -->
 	<div class="container__form container--signin">
 		<form action="/logInPatient" class="form" id="form2" method="POST">
 			<h2 class="form__title">Login</h2>
-			<input type="email" placeholder="Email" class="input" /name="email">
+			<input type="email" placeholder="Email" class="input" name="email" />
 			<input type="password" placeholder="Password" class="input" name="password" />
 			<a href="#" class="link">Forgot your password?</a>
 			<input class="btn" type="submit" value="Log In" > 
 		</form>
+	</div> 
 	</div>
+ </body>
+</html> 
+ 
 
-	<!-- Overlay -->
-	<div class="container__overlay">
-		<div class="overlay">
-			{{!-- <div class="overlay__panel overlay--left">
-				<button class="btn" id="signIn">Login</button>
-			</div> --}}
-			{{!-- <div class="overlay__panel overlay--right">
-				<button class="btn" id="signUp" >Sign Up</button>
-			</div> --}}
-		</div>
-	</div>
-</div>
+<script src="script.js"></script>
 </body>
 </html>
-
-<script>
-    const signInBtn = document.getElementById("signIn");
-const signUpBtn = document.getElementById("signUp");
-const fistForm = document.getElementById("form1");
-const secondForm = document.getElementById("form2");
-const container = document.querySelector(".container");
-
-signInBtn.addEventListener("click", () => {
-	container.classList.remove("right-panel-active");
-});
-
-signUpBtn.addEventListener("click", () => {
-	container.classList.add("right-panel-active");
-});
-
-fistForm.addEventListener("submit", (e) => e.preventDefault());
-secondForm.addEventListener("submit", (e) => e.preventDefault());
-
-</script>

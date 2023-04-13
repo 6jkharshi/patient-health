@@ -26,32 +26,32 @@
     </div>
     <!-- end -->
     <div class="content">
-      <form action="#">
+      <form action="#" method="POST">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name<span style="color: red">*</span></span> 
-            <input type="text" placeholder="Enter your name"  value="{{naming}}" required>
+            <input type="text" placeholder="Enter your name"  value="{{naming}}" name="user" required>
           </div>
           <div class="input-box">
             <span class="details">Guardian Name<span style="color: red">*</span></span>
-            <input type="text" placeholder="Enter Guardian Name" required>
+            <input type="text" placeholder="Enter Guardian Name" name="guardian" required>
           </div>
           <div class="input-box">
             <span class="details">Contact Number<span style="color: red">*</span></span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" placeholder="Enter your number" name="contact" required>
           </div>
           <div class="input-box">
             <span class="details">Guardian Number<span style="color: red">*</span></span>
-            <input type="text" placeholder="Enter Guardian number" required>
+            <input type="text" placeholder="Enter Guardian number" name="guardianPhn" required>
           </div>
           <div class="input-box">
             <span class="details">Birth Date<span style="color: red">*</span></span>
-            <input type="text" placeholder="dd-mm-yyyy" required>
+            <input type="text" placeholder="dd-mm-yyyy" name="dob" required>
           </div>
 
           <div class="input-box">
             <span class="details">Blood Group<span style="color: red">*</span></span>
-            <input type="text" placeholder="Enter your blood group" required>
+            <input type="text" placeholder="Enter your blood group" name="bloodg" required>
           </div>
           <!--<div class="input-box">
             <span class="details">Confirm Password</span>
@@ -81,7 +81,7 @@
       </div>
         <div class="input-box">
             <span class="details">Address<span style="color: red">*</span></span>
-            <textarea cols="80" rows="5" class="textarea" placeholder=" Enter the Address" value="Address"></textarea> 
+            <textarea cols="80" rows="5" class="textarea" placeholder=" Enter the Address" value="Address" name="address"></textarea> 
             <!-- <input type="text" placeholder="Enter your Address" style="text-align:center ; height: 100px ; width: 90% ;" > -->
       </div>
 
@@ -92,15 +92,15 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">Height<span style="color: red">*</span></span>
-            <input type="text" placeholder="Enter your Height" required>
+            <input type="text" placeholder="Enter your Height" name="height" required>
             </div>
           <div class="input-box">
             <span class="details">Weight<span style="color: red">*</span></span>
-            <input type="text" placeholder="Enter your Weight" required>
+            <input type="text" placeholder="Enter your Weight" name="weight" required>
             </div>
           <div class="input-box">
             <span class="details">Occupation<span style="color: red">*</span></span>
-            <input type="text" placeholder="Enter your Occupation" required>
+            <input type="text" placeholder="Enter your Occupation" name="Occupation" required>
           </div>
         </div>
       
